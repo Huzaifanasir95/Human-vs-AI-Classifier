@@ -1,0 +1,122 @@
+# Project Configuration
+
+# Paths
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  train_file: "data/processed/train.csv"
+  val_file: "data/processed/val.csv"
+  test_file: "data/processed/test.csv"
+
+# Data Preprocessing
+preprocessing:
+  max_length: 512
+  min_length: 50
+  test_size: 0.15
+  val_size: 0.15
+  random_state: 42
+  balance_dataset: true
+
+# Feature Extraction
+features:
+  tfidf:
+    max_features: 5000
+    ngram_range: [1, 3]
+    min_df: 2
+    max_df: 0.95
+  
+  statistical:
+    calculate_perplexity: true
+    calculate_burstiness: true
+    calculate_entropy: true
+  
+  linguistic:
+    pos_tags: true
+    dependency_parsing: false
+    readability_scores: true
+
+# Traditional Models
+traditional_models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    solver: "lbfgs"
+  
+  random_forest:
+    n_estimators: 200
+    max_depth: 20
+    min_samples_split: 5
+    random_state: 42
+  
+  svm:
+    C: 1.0
+    kernel: "rbf"
+    gamma: "scale"
+  
+  xgboost:
+    n_estimators: 200
+    max_depth: 10
+    learning_rate: 0.1
+    random_state: 42
+
+# Deep Learning Models
+deep_models:
+  lstm:
+    embedding_dim: 300
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.3
+    bidirectional: true
+  
+  bert:
+    model_name: "bert-base-uncased"
+    max_length: 512
+    learning_rate: 2e-5
+    batch_size: 16
+    epochs: 3
+    warmup_steps: 500
+  
+  roberta:
+    model_name: "roberta-base"
+    max_length: 512
+    learning_rate: 2e-5
+    batch_size: 16
+    epochs: 3
+
+# Training
+training:
+  batch_size: 32
+  epochs: 10
+  learning_rate: 0.001
+  early_stopping_patience: 3
+  save_best_only: true
+  use_gpu: true
+
+# Evaluation
+evaluation:
+  metrics: ["accuracy", "precision", "recall", "f1", "auc_roc"]
+  cross_validation_folds: 5
+  generate_confusion_matrix: true
+  generate_roc_curve: true
+  feature_importance: true
+
+# Ensemble
+ensemble:
+  voting_type: "soft"  # soft or hard
+  weights: null  # null for equal weights, or list of weights
+  use_stacking: true
+  meta_learner: "logistic_regression"
+
+# Output
+output:
+  models_dir: "models/saved_models"
+  visualizations_dir: "outputs/visualizations"
+  reports_dir: "outputs/reports"
+  predictions_dir: "outputs/predictions"
+  save_predictions: true
+  save_probabilities: true
+
+# Logging
+logging:
+  level: "INFO"
+  log_file: "outputs/training.log"
