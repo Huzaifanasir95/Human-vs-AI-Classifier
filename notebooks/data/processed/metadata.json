@@ -1,0 +1,23 @@
+{
+  "total_samples": 52452,
+  "train_samples": 36716,
+  "val_samples": 7868,
+  "test_samples": 7868,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "num_classes": 2,
+  "class_names": [
+    "Human",
+    "AI"
+  ],
+  "balanced": true,
+  "min_length": 50,
+  "random_state": 42,
+  "sources": [
+    "hc3_chatgpt",
+    "hc3_human",
+    "synthetic_ai",
+    "synthetic_human"
+  ]
+}
