@@ -78,11 +78,6 @@ data/processed/*
 !data/processed/.gitkeep
 models/saved_models/*
 !models/saved_models/.gitkeep
-outputs/visualizations/*
-!outputs/visualizations/.gitkeep
-outputs/reports/*
-!outputs/reports/.gitkeep
-outputs/predictions/*
 !outputs/predictions/.gitkeep
 *.log
 
@@ -94,3 +89,4 @@ outputs/predictions/*
 *.ckpt
 notebooks/models/saved_models/bert_best.pt
 /Report
+upload_to_huggingface.py
