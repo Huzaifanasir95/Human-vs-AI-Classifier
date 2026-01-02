@@ -113,39 +113,59 @@ Actual Human  3918     16    → 99.59% Recall
 
 ### System Pipeline
 
-```
-Input Text
-    ↓
-[Feature Engineering]
-    ├─→ TF-IDF Vectorization (5,000 features)
-    │   • Unigrams & Bigrams
-    │   • Max DF: 0.95, Min DF: 2
-    │
-    └─→ Linguistic Features (15 features)
-        • Text statistics (length, word/sentence counts)
-        • Lexical diversity (Type-Token Ratio)
-        • Character ratios (stopwords, punctuation, digits)
-    ↓
-Multi-Modal Feature Vector (5,015 dimensions)
-    ↓
-┌──────────────────────────────────────────────┐
-│         Base Classifiers (Parallel)          │
-├──────────────────────────────────────────────┤
-│ Traditional ML          │ Deep Learning      │
-├─────────────────────────┼────────────────────┤
-│ • Logistic Regression   │ • BERT             │
-│ • Random Forest         │   (bert-base)      │
-│ • SVM (RBF kernel)      │ • BiLSTM+Attention │
-│ • XGBoost               │   (64 units)       │
-└─────────────────────────┴────────────────────┘
-    ↓
-[Ensemble Aggregation]
-    ├─→ Hard Voting
-    ├─→ Soft Voting
-    ├─→ Weighted Average (w_XGB=0.25, w_LR=0.20, ...)
-    └─→ Stacking (Meta-learner: Logistic Regression)
-    ↓
-Final Prediction: Human (0) or AI (1)
+```mermaid
+graph TD
+    A[Input Text] --> B[Feature Engineering]
+    
+    B --> C[TF-IDF Vectorization<br/>5,000 features<br/>• Unigrams & Bigrams<br/>• Max DF: 0.95, Min DF: 2]
+    B --> D[Linguistic Features<br/>15 features<br/>• Text statistics<br/>• Lexical diversity TTR<br/>• Character ratios]
+    
+    C --> E[Multi-Modal Feature Vector<br/>5,015 dimensions]
+    D --> E
+    
+    E --> F[Base Classifiers - Parallel Execution]
+    
+    F --> G1[Traditional ML Models]
+    F --> G2[Deep Learning Models]
+    
+    G1 --> H1[Logistic Regression<br/>F1: 98.98%]
+    G1 --> H2[Random Forest<br/>200 trees<br/>F1: 95.73%]
+    G1 --> H3[SVM RBF Kernel<br/>F1: 98.67%]
+    G1 --> H4[XGBoost 🏆<br/>F1: 99.04%]
+    
+    G2 --> H5[BERT<br/>bert-base-uncased<br/>F1: 97.33%]
+    G2 --> H6[BiLSTM + Attention<br/>64 units per direction<br/>F1: 97.12%]
+    
+    H1 --> I[Ensemble Aggregation]
+    H2 --> I
+    H3 --> I
+    H4 --> I
+    H5 --> I
+    H6 --> I
+    
+    I --> J1[Hard Voting<br/>Majority vote<br/>F1: 99.21%]
+    I --> J2[Soft Voting<br/>Probability averaging<br/>F1: 99.45%]
+    I --> J3[Weighted Average 🏆<br/>w_XGB=0.25, w_LR=0.20<br/>F1: 99.59%]
+    I --> J4[Stacking<br/>Meta-learner: LogReg<br/>F1: 99.56%]
+    
+    J1 --> K[Final Prediction]
+    J2 --> K
+    J3 --> K
+    J4 --> K
+    
+    K --> L{Human or AI?}
+    L -->|Class 0| M[Human-written]
+    L -->|Class 1| N[AI-generated]
+    
+    style A fill:#e1f5ff
+    style E fill:#fff4e6
+    style F fill:#f3e5f5
+    style I fill:#e8f5e9
+    style K fill:#fff3e0
+    style H4 fill:#ffd54f
+    style J3 fill:#ffd54f
+    style M fill:#c8e6c9
+    style N fill:#ffcdd2
 ```
 
 ### Ensemble Comparison
@@ -611,19 +631,10 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ---
 
-## 📊 Stats
-
-![GitHub repo size](https://img.shields.io/github/repo-size/Huzaifanasir95/Human-vs-AI-Classifier)
-![GitHub code size](https://img.shields.io/github/languages/code-size/Huzaifanasir95/Human-vs-AI-Classifier)
-![Lines of code](https://img.shields.io/tokei/lines/github/Huzaifanasir95/Human-vs-AI-Classifier)
-![GitHub last commit](https://img.shields.io/github/last-commit/Huzaifanasir95/Human-vs-AI-Classifier)
-
----
 
 <div align="center">
 
 **⭐ If you find this project useful, please consider giving it a star! ⭐**
 
-**Made with ❤️ by [Huzaifa Nasir](https://github.com/Huzaifanasir95)**
 
 </div>
