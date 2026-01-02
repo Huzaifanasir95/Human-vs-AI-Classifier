@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18133069.svg)](https://doi.org/10.5281/zenodo.18133069)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Models-yellow)](https://huggingface.co/huzaifanasirrr/human-vs-ai-text-classifier)
-[![GitHub](https://img.shields.io/github/stars/huzaifanasir95/Human-vs-AI-Classifier?style=social)](https://github.com/huzaifanasir95/Human-vs-AI-Classifier)
+[![GitHub](https://img.shields.io/github/stars/Huzaifanasir95/Human-vs-AI-Classifier?style=social)](https://github.com/Huzaifanasir95/Human-vs-AI-Classifier)
 
 > **A comprehensive ensemble-based text classification system achieving 99.59% F1-score in distinguishing human-written from AI-generated text**
 
@@ -190,7 +190,7 @@ Final Prediction: Human (0) or AI (1)
 
 ```bash
 # Clone repository
-git clone https://github.com/huzaifanasir95/Human-vs-AI-Classifier.git
+git clone https://github.com/Huzaifanasir95/Human-vs-AI-Classifier.git
 cd Human-vs-AI-Classifier
 
 # Install dependencies
@@ -531,8 +531,8 @@ Emerging Sciences, Pakistan, 2025. doi: 10.5281/zenodo.18133069
 - 🎓 National University of Computer and Emerging Sciences (FAST-NUCES)
 - 📧 Email: [nasirhuzaifa95@gmail.com](mailto:nasirhuzaifa95@gmail.com)
 - 🆔 ORCID: [0009-0000-1482-3268](https://orcid.org/0009-0000-1482-3268)
-- 💼 LinkedIn: [huzaifanasir95](https://linkedin.com/in/huzaifanasir95)
-- 🐙 GitHub: [@huzaifanasir95](https://github.com/huzaifanasir95)
+- 💼 LinkedIn: [huzaifa-nasir-](https://www.linkedin.com/in/huzaifa-nasir-)
+- 🐙 GitHub: [@Huzaifanasir95](https://github.com/Huzaifanasir95)
 - 🤗 Hugging Face: [@huzaifanasirrr](https://huggingface.co/huzaifanasirrr)
 
 ---
@@ -582,7 +582,7 @@ This project builds upon outstanding work from the research community:
 - 🌐 **Live Demo**: Coming soon (Gradio/Streamlit)
 - 📦 **Hugging Face Models**: [huzaifanasirrr/human-vs-ai-text-classifier](https://huggingface.co/huzaifanasirrr/human-vs-ai-text-classifier)
 - 📑 **Research Paper (Zenodo)**: [10.5281/zenodo.18133069](https://doi.org/10.5281/zenodo.18133069)
-- 🐙 **GitHub Repository**: [Human-vs-AI-Classifier](https://github.com/huzaifanasir95/Human-vs-AI-Classifier)
+- 🐙 **GitHub Repository**: [Human-vs-AI-Classifier](https://github.com/Huzaifanasir95/Human-vs-AI-Classifier)
 - 📊 **Dataset**: [HC3 on Hugging Face](https://huggingface.co/datasets/Hello-SimpleAI/HC3)
 
 ---
@@ -590,7 +590,7 @@ This project builds upon outstanding work from the research community:
 ## 📞 Contact & Support
 
 ### Questions or Issues?
-- 💬 Open an [Issue](https://github.com/huzaifanasir95/Human-vs-AI-Classifier/issues)
+- 💬 Open an [Issue](https://github.com/Huzaifanasir95/Human-vs-AI-Classifier/issues)
 - 📧 Email: [nasirhuzaifa95@gmail.com](mailto:nasirhuzaifa95@gmail.com)
 
 ### Contributions Welcome!
@@ -607,16 +607,16 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=huzaifanasir95/Human-vs-AI-Classifier&type=Date)](https://star-history.com/#huzaifanasir95/Human-vs-AI-Classifier&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Huzaifanasir95/Human-vs-AI-Classifier&type=Date)](https://star-history.com/#Huzaifanasir95/Human-vs-AI-Classifier&Date)
 
 ---
 
 ## 📊 Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/huzaifanasir95/Human-vs-AI-Classifier)
-![GitHub code size](https://img.shields.io/github/languages/code-size/huzaifanasir95/Human-vs-AI-Classifier)
-![Lines of code](https://img.shields.io/tokei/lines/github/huzaifanasir95/Human-vs-AI-Classifier)
-![GitHub last commit](https://img.shields.io/github/last-commit/huzaifanasir95/Human-vs-AI-Classifier)
+![GitHub repo size](https://img.shields.io/github/repo-size/Huzaifanasir95/Human-vs-AI-Classifier)
+![GitHub code size](https://img.shields.io/github/languages/code-size/Huzaifanasir95/Human-vs-AI-Classifier)
+![Lines of code](https://img.shields.io/tokei/lines/github/Huzaifanasir95/Human-vs-AI-Classifier)
+![GitHub last commit](https://img.shields.io/github/last-commit/Huzaifanasir95/Human-vs-AI-Classifier)
 
 ---
 
@@ -624,6 +624,6 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 **⭐ If you find this project useful, please consider giving it a star! ⭐**
 
-**Made with ❤️ by [Huzaifa Nasir](https://github.com/huzaifanasir95)**
+**Made with ❤️ by [Huzaifa Nasir](https://github.com/Huzaifanasir95)**
 
 </div>
