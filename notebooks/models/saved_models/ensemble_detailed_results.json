@@ -1,0 +1,108 @@
+{
+  "individual_models": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9897051347229283,
+      "Precision": 0.9827110999749437,
+      "Recall": 0.9969496695475343,
+      "F1-Score": 0.9897791798107256,
+      "ROC-AUC": 0.999568373847177
+    },
+    {
+      "Model": "Svm",
+      "Accuracy": 0.9866548042704626,
+      "Precision": 0.9806678383128296,
+      "Recall": 0.9928825622775801,
+      "F1-Score": 0.986737400530504,
+      "ROC-AUC": 0.999125440122985
+    },
+    {
+      "Model": "Bert",
+      "Accuracy": 0.9726741230299949,
+      "Precision": 0.9510065486296386,
+      "Recall": 0.9966954753431622,
+      "F1-Score": 0.9733151297008812,
+      "ROC-AUC": 0.9975181173139206
+    },
+    {
+      "Model": "Bilstm",
+      "Accuracy": 0.971021860701576,
+      "Precision": 0.9667506297229219,
+      "Recall": 0.9755973563802746,
+      "F1-Score": 0.9711538461538461,
+      "ROC-AUC": 0.9963165747802649
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.9572953736654805,
+      "Precision": 0.9570630081300813,
+      "Recall": 0.9575495678698526,
+      "F1-Score": 0.9573062261753494,
+      "ROC-AUC": 0.9922461721609402
+    },
+    {
+      "Model": "Xgboost",
+      "Accuracy": 0.48106253177427555,
+      "Precision": 0.3431578947368421,
+      "Recall": 0.04143365531265887,
+      "F1-Score": 0.07393966885915174,
+      "ROC-AUC": 0.7151711617385903
+    }
+  ],
+  "ensemble_methods": [
+    {
+      "Method": "Weighted Average",
+      "Accuracy": 0.9959328927300457,
+      "Precision": 0.9959328927300457,
+      "Recall": 0.9959328927300457,
+      "F1-Score": 0.9959328927300457,
+      "ROC-AUC": 0.999814491214857
+    },
+    {
+      "Method": "Stacking",
+      "Accuracy": 0.9955516014234875,
+      "Precision": 0.9946714031971581,
+      "Recall": 0.99644128113879,
+      "F1-Score": 0.9955555555555555,
+      "ROC-AUC": 0.9998197250050336
+    },
+    {
+      "Method": "Soft Voting",
+      "Accuracy": 0.994534824605999,
+      "Precision": 0.9936564323775692,
+      "Recall": 0.9954245043213015,
+      "F1-Score": 0.9945396825396825,
+      "ROC-AUC": 0.9997644148273663
+    },
+    {
+      "Method": "Hard Voting",
+      "Accuracy": 0.9921199796644636,
+      "Precision": 0.9943820224719101,
+      "Recall": 0.9898322318251144,
+      "F1-Score": 0.9921019108280255,
+      "ROC-AUC": 0.9997644148273663
+    }
+  ],
+  "best_single_model": {
+    "name": "Logistic Regression",
+    "f1_score": 0.9897791798107256,
+    "accuracy": 0.9897051347229283
+  },
+  "best_ensemble": {
+    "method": "Weighted Average",
+    "f1_score": 0.9959328927300457,
+    "accuracy": 0.9959328927300457
+  },
+  "improvement": 0.6153712919320098,
+  "model_diversity": {
+    "avg_pairwise_agreement": 0.7977461447212338
+  },
+  "weights_used": {
+    "Xgboost": 0.25,
+    "Logistic Regression": 0.2,
+    "Svm": 0.15,
+    "Random Forest": 0.1,
+    "Bert": 0.2,
+    "Bilstm": 0.1
+  }
+}

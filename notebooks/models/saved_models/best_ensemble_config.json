@@ -1,0 +1,26 @@
+{
+  "method": "weighted_average",
+  "weights": {
+    "Xgboost": 0.25,
+    "Logistic Regression": 0.2,
+    "Svm": 0.15,
+    "Random Forest": 0.1,
+    "Bert": 0.2,
+    "Bilstm": 0.1
+  },
+  "base_models": [
+    "Logistic Regression",
+    "Random Forest",
+    "Svm",
+    "Xgboost",
+    "Bilstm",
+    "Bert"
+  ],
+  "performance": {
+    "accuracy": 0.9959328927300457,
+    "precision": 0.9959328927300457,
+    "recall": 0.9959328927300457,
+    "f1_score": 0.9959328927300457,
+    "roc_auc": 0.999814491214857
+  }
+}
